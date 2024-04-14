@@ -1,14 +1,23 @@
 /* https://coolors.co/294e89-0b0a07-f5f3f5-4ca1db-0d001d */
 :root {
     --primary-color: #01122d;
-    --secondary-color: hsl(204, 67%, 58%);
+    --secondary-color: #018ec4;
     --background-color: hsl(0, 0%, 100%);
-    --text-color: hsl(0, 0%, 0%);
+    --text-color: #000000;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+    cursor: url("./assets/svgs/cursor.png"), auto
 }
 
 * {
     font-family: poppins;
     margin: 0%;
+   
 }
 
 body {
@@ -48,12 +57,14 @@ h2 {
     color: var(--text-color);
 }
 
-h3 {
-    color: var(--text-color);
-}
+h3 {}
 
 h4 {
     color: var(--text-color);
+}
+h5{
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 p {
@@ -65,7 +76,7 @@ p {
 }
 
 .icon-map>path {
-    animation: globe-rotate 1.5s linear infinite;
+    animation: globe-rotate 2s linear infinite;
 }
 
 @keyframes globe-rotate {
@@ -114,42 +125,124 @@ nav {
     height: 4rem;
 }
 
-.header-section { 
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-section {
     width: 100%;
     margin: 0 auto;
     position: relative;
     max-width: 1200px;
     padding: 5px;
     overflow: hidden;
-  }
-  .header-section video {  
-    width: 100%; }
-  .header-section svg { 
+}
+
+.header-section video {
+    object-fit: fill;
     width: 100%;
-    position:absolute;
+    height: 70%;
+}
+
+.header-section svg {
+    width: 100%;
+    position: absolute;
     top: 0;
-    left: 0; 
-    height: 100%;
+    left: 0;
+    height: 70%;
     padding: 5px;
-  }
-  .header-section svg text {
+}
+
+.header-section svg text {
     font-family: poppins, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 15px;
     padding: 5px;
-  }
-  .header-section svg rect {
+}
+
+.header-section-subtext {
+    font-size: 3px !important;
+}
+
+.header-section svg rect {
     fill: white;
-  }
-  .header-section  svg > rect {
-      -webkit-mask: url(#mask);
-      mask: url(#mask);
-  }
+}
+
+.header-section svg>rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+#scroll-down-btn {
+    position: absolute;
+    bottom: 25%;
+    width: 5px;
+    left: 50%;
+    height: auto;
+    z-index: 3;
+}
+
+#scroll-down-btn>lottie-player {
+    width: 100%;
+    height: 100%;
+}
+
+#about-us-section {
+    width: 100vw;
+    height: 100vw;
+    margin-top: -20%;
+
+}
+
+#about-us {
+    width: 100vw;
+    height: fit-content;
+    margin-top: -10%;
+    padding: 1rem;
+    color: var(--background-color);
+    font-size: 4rem;
+    background: var(--primary-color);
+}
+
+.about-us-content {
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem
+}
+#about-us-img{
+    margin-top: -30%;
+}
+
+.about-us-content .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vision-mission h4{
+ font-size: 3rem;
+ color: var(--background-color);
+}
+.vision-mission{
+    font-size: 1rem;
+   }
 
 /* Mobile */
 @media screen and (max-width:1200px) {
     .header-section svg {
         font-size: 3rem;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+    }
+
+    #about-us-img{
+        margin-top: -25%;
     }
 }
