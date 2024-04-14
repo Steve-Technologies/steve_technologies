@@ -1,0 +1,155 @@
+/* https://coolors.co/294e89-0b0a07-f5f3f5-4ca1db-0d001d */
+:root {
+    --primary-color: #01122d;
+    --secondary-color: hsl(204, 67%, 58%);
+    --background-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 0%);
+}
+
+* {
+    font-family: poppins;
+    margin: 0%;
+}
+
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+    background: hsla(204, 67%, 58%, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--higlight-text-color);
+    outline: 1px solid var(--background-color);
+}
+
+main {
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 6rem;
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+h3 {
+    color: var(--text-color);
+}
+
+h4 {
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.map {
+    overflow: hidden;
+}
+
+.icon-map>path {
+    animation: globe-rotate 1.5s linear infinite;
+}
+
+@keyframes globe-rotate {
+    from {
+        transform: translate(-85%);
+    }
+
+    to {
+        transform: translate(60%);
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    text-wrap: nowrap;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem
+}
+
+.logo>h4 {
+    text-wrap: nowrap;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.header-section { 
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .header-section video {  
+    width: 100%; }
+  .header-section svg { 
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    padding: 5px;
+  }
+  .header-section svg text {
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .header-section svg rect {
+    fill: white;
+  }
+  .header-section  svg > rect {
+      -webkit-mask: url(#mask);
+      mask: url(#mask);
+  }
+
+/* Mobile */
+@media screen and (max-width:1200px) {
+    .header-section svg {
+        font-size: 3rem;
+    }
+}
