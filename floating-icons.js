@@ -20,7 +20,7 @@ tsParticles.load({
       fullScreen: { enable: false, zIndex: 0 },
       detectRetina: true,
       duration: 0,
-      fpsLimit: 30,
+      fpsLimit: 24,
       interactivity: {
         detectsOn: "window",
         events: {

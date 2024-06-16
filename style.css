@@ -4,6 +4,20 @@
     --secondary-color: #018ec4;
     --background-color: hsl(0, 0%, 100%);
     --text-color: #000000;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --border: 2px solid var(--color-primary);
+
+    --card-background:#ededed;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --color-shadow: white;
+    --box-shadow1: 0px 0rem 2rem 0px #b5b5b5;
 }
 
 
@@ -58,7 +72,9 @@ h2 {
     color: var(--text-color);
 }
 
-h3 {}
+h3 {
+    font-size: 3rem;
+}
 
 h4 {
     color: var(--text-color);
@@ -132,7 +148,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 .header-section {
@@ -197,6 +213,11 @@ nav {
 #about-us-section {
     margin-top: -17%;
     overflow: hidden;
+   
+}
+.waves{
+    position: relative;
+    z-index: 2;
 }
 
 #about-us {
@@ -206,7 +227,11 @@ nav {
     color: var(--background-color);
     font-size: 4rem;
     background: var(--primary-color);
-    
+     padding-bottom: 20%;
+     h3{
+        position: relative;
+        z-index: 3;
+     }
 }
 
 .about-us-content {
@@ -241,22 +266,136 @@ nav {
 .vision-mission{
     font-size: 1rem;
    }
-.orbit{
+
+
+   .card1{
+    border-radius: var(--card-border-radius);
+    border:  2px solid #e6effe;
+    padding: var(--card-padding);
+    text-align: center;
+    color: var(--secondary-color);
+    box-shadow: var(--box-shadow1);
+    transition: all 100ms ease-in;
+    img{
+        transition: all 200ms ease-in;
+    }
+    h4{
+        color: #c4aa01;
+    }
+}
+.card1:hover{
+    border:  2px solid var(--secondary-color);
+    img{
+        scale: 1.25;
+    }
+}
+
+#alliance-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -17%;
+    overflow: hidden;
+   
+}
+
+#alliance-partner{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    margin-top: -10%;
+    padding: 1rem;
+    color: var(--background-color);
+     text-align: center;
+}
+#alliance-partner-title{
     position: relative;
+    z-index: 3;
+    color: var(--primary-color);
+    span{
+        color: var(--secondary-color);
+    }
 }
-#costech-logo{
-    width:5%
+#alliance-below-waves{
+    margin-top: -10%;
 }
-.orbit img{
-    width: 10%;
-    height: 10%;
+
+.section{
+    margin-top: -17%;
+    overflow: hidden;
 }
+.section-content{
+    background-image: url(./assets/backgrounds/bg_02.jpeg);
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    margin-top: -10%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    h3{
+        color: white;
+    }
+}
+
+.partners{
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    place-content: center;
+    img{
+        max-width: 10rem;
+        height: 5rem;
+    }
+    
+}
+
+#management{
+    padding-top: 21%;
+    color: white;
+    h4{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    img{
+        max-width: 10rem;
+    }
+}
+.people{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    background: #6868686a;
+    border-radius: var(--card-border-radius);
+    img{
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        border: 1px dashed var(--secondary-color);
+    }
+    img:hover{
+        border: 1px solid var(--secondary-color);
+    }
+}
+
 /* Mobile */
 @media screen and (max-width:1200px) {
     .header-section svg {
         font-size: 3rem;
     }
-
     .about-us-content {
         flex-direction: column;
     }
@@ -271,5 +410,19 @@ nav {
     }
     .about-us-content .right{
         width: 100%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .partners{
+        grid-template-columns:repeat(2, 1fr); ;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .card1{
+        max-width: 8rem;
+        img{
+            max-width: 7rem;
+        }
     }
 }
