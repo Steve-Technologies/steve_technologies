@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
     <script src="./assets/scripts/lottie-player.js"></script>
   </head>
 
@@ -963,50 +966,28 @@
       </div>
     </nav>
 
-    <main>
-      <div class="header-section">
-        <video autoplay playsinline muted loop preload>
-          <source src="text-bg-video.mp4" />
-        </video>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 285 80"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <mask id="mask" x="0" y="0" width="100%" height="100%">
-              <rect x="0" y="0" width="100%" height="100%" />
-              <text x="80" y="20">A New Era</text>
-              <text x="80" y="35">of Innovation</text>
-              <text class="header-section-subtext" x="80" y="40">
-                SteveMobile Technologies Pvt Ltd is a technology services
-                company
-              </text>
-              <text class="header-section-subtext" x="80" y="44">
-                based in the Silicon Valley of Kerala in KSUM-Technopark
-              </text>
-              <text class="header-section-subtext" x="80" y="48">
-                for web, mobile and AI solutions.
-              </text>
-            </mask>
-          </defs>
-          <rect x="0" y="0" width="100%" height="100%" />
-        </svg>
-        <a id="scroll-down-btn" href="#about-us"
-          ><span
-            ><lottie-player
-              id="scroll-down-btn"
-              src="./assets/lotties/scroll-down.json"
-              background="transparent"
-              speed="1"
-              style="width: 5rem; height: 5rem"
-              loop
-              autoplay
-            ></lottie-player></span
-        ></a>
+    <main id="hero">
+      <div class="hero-content">
+        <h2 class="hero-text">A New Era of Innovation</h2>
+        <h2 class="hero-subtext">
+          SteveMobile Technologies Pvt Ltd is a technology services company
+          based in the Silicon Valley of Kerala in KSUM-Technopark for web,
+          mobile and AI solutions.
+        </h2>
       </div>
+      <a id="scroll-down-btn" href="#about-us">
+        <span
+          ><lottie-player
+            id="scroll-down-btn"
+            src="./assets/lotties/scroll-down.json"
+            background="transparent"
+            speed="1"
+            style="width: 5rem; height: 5rem"
+            loop
+            autoplay
+          ></lottie-player></span
+      ></a>
     </main>
-    <div id="tsparticles"></div>
     <div id="about-us-section">
       <div id="about-waves" class="waves">
         <svg
@@ -1162,144 +1143,233 @@
         <h3 id="alliance-partner-title"><span>Alliance</span> Partners</h3>
         <div class="partners">
           <div class="card1">
-            <img src="./assets/associations-logos/Worldline_SA_logo.svg" alt="Wordline">
+            <img
+              src="./assets/associations-logos/Worldline_SA_logo.svg"
+              alt="Wordline"
+            />
             <h4>Wordline</h4>
           </div>
           <div class="card1">
-            <img src="./assets/associations-logos/ags.png" alt="AGS">
+            <img src="./assets/associations-logos/ags.png" alt="AGS" />
             <h4>AGS</h4>
           </div>
           <div class="card1">
-            <img src="./assets/associations-logos/esds.svg" alt="esds">
+            <img src="./assets/associations-logos/esds.svg" alt="esds" />
             <h4>ESDS</h4>
           </div>
           <div class="card1">
-            <img src="./assets/associations-logos/atom.png" alt="ATOM">
+            <img src="./assets/associations-logos/atom.png" alt="ATOM" />
             <h4>ATOM</h4>
           </div>
           <div class="card1">
-            <img src="./assets/associations-logos/technopark.svg" alt="Technopark">
+            <img
+              src="./assets/associations-logos/technopark.svg"
+              alt="Technopark"
+            />
             <h4>Technopark</h4>
           </div>
           <div class="card1">
-            <img src="./assets/associations-logos/kerala-startup-mission.svg" alt="ksum">
+            <img
+              src="./assets/associations-logos/kerala-startup-mission.svg"
+              alt="ksum"
+            />
             <h4>KSUM</h4>
           </div>
-        <div class="card1">
-          <img src="./assets/associations-logos/cdit.svg" alt="cdit">
-          <h4>CDIT</h4>
-        </div>
-        <div class="card1">
-          <img src="./assets/associations-logos/costech.svg" alt="costech">
-          <h4>COSTECH</h4>
-        </div>
+          <div class="card1">
+            <img src="./assets/associations-logos/cdit.svg" alt="cdit" />
+            <h4>CDIT</h4>
+          </div>
+          <div class="card1">
+            <img src="./assets/associations-logos/costech.svg" alt="costech" />
+            <h4>COSTECH</h4>
+          </div>
         </div>
       </div>
       <div id="alliance-below-waves" class="waves">
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
-          .path-0{
-            animation:pathAnim-0 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-          }
-          @keyframes pathAnim-0{
-            0%{
-              d: path("M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z");
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <style>
+            .path-0 {
+              animation: pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
             }
-            25%{
-              d: path("M 0,400 L 0,150 C 86.97607655502392,124.76555023923446 173.95215311004785,99.53110047846891 279,91 C 384.04784688995215,82.46889952153109 507.16746411483246,90.64114832535884 612,121 C 716.8325358851675,151.35885167464116 803.3779904306219,203.9043062200957 895,214 C 986.6220095693781,224.0956937799043 1083.3205741626793,191.74162679425837 1175,174 C 1266.6794258373207,156.25837320574163 1353.3397129186603,153.12918660287082 1440,150 L 1440,400 L 0,400 Z");
+            @keyframes pathAnim-0 {
+              0% {
+                d: path(
+                  "M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z"
+                );
+              }
+              25% {
+                d: path(
+                  "M 0,400 L 0,150 C 86.97607655502392,124.76555023923446 173.95215311004785,99.53110047846891 279,91 C 384.04784688995215,82.46889952153109 507.16746411483246,90.64114832535884 612,121 C 716.8325358851675,151.35885167464116 803.3779904306219,203.9043062200957 895,214 C 986.6220095693781,224.0956937799043 1083.3205741626793,191.74162679425837 1175,174 C 1266.6794258373207,156.25837320574163 1353.3397129186603,153.12918660287082 1440,150 L 1440,400 L 0,400 Z"
+                );
+              }
+              50% {
+                d: path(
+                  "M 0,400 L 0,150 C 126.77511961722487,108.64114832535884 253.55023923444975,67.2822966507177 339,80 C 424.44976076555025,92.7177033492823 468.57416267942585,159.51196172248805 539,172 C 609.4258373205741,184.48803827751195 706.1531100478468,142.66985645933016 810,144 C 913.8468899521532,145.33014354066984 1024.8133971291868,189.80861244019138 1131,198 C 1237.1866028708132,206.19138755980862 1338.5933014354066,178.0956937799043 1440,150 L 1440,400 L 0,400 Z"
+                );
+              }
+              75% {
+                d: path(
+                  "M 0,400 L 0,150 C 73.69377990430621,103.00478468899522 147.38755980861242,56.009569377990445 234,80 C 320.6124401913876,103.99043062200955 420.1435406698565,198.9665071770335 538,197 C 655.8564593301435,195.0334928229665 792.0382775119616,96.12440191387559 898,86 C 1003.9617224880384,75.87559808612441 1079.7033492822968,154.5358851674641 1165,180 C 1250.2966507177032,205.4641148325359 1345.1483253588517,177.73205741626793 1440,150 L 1440,400 L 0,400 Z"
+                );
+              }
+              100% {
+                d: path(
+                  "M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z"
+                );
+              }
             }
-            50%{
-              d: path("M 0,400 L 0,150 C 126.77511961722487,108.64114832535884 253.55023923444975,67.2822966507177 339,80 C 424.44976076555025,92.7177033492823 468.57416267942585,159.51196172248805 539,172 C 609.4258373205741,184.48803827751195 706.1531100478468,142.66985645933016 810,144 C 913.8468899521532,145.33014354066984 1024.8133971291868,189.80861244019138 1131,198 C 1237.1866028708132,206.19138755980862 1338.5933014354066,178.0956937799043 1440,150 L 1440,400 L 0,400 Z");
-            }
-            75%{
-              d: path("M 0,400 L 0,150 C 73.69377990430621,103.00478468899522 147.38755980861242,56.009569377990445 234,80 C 320.6124401913876,103.99043062200955 420.1435406698565,198.9665071770335 538,197 C 655.8564593301435,195.0334928229665 792.0382775119616,96.12440191387559 898,86 C 1003.9617224880384,75.87559808612441 1079.7033492822968,154.5358851674641 1165,180 C 1250.2966507177032,205.4641148325359 1345.1483253588517,177.73205741626793 1440,150 L 1440,400 L 0,400 Z");
-            }
-            100%{
-              d: path("M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z");
-            }
-          }</style><path d="M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+          </style>
+          <path
+            d="M 0,400 L 0,150 C 81.40669856459331,163.2822966507177 162.81339712918663,176.56459330143542 274,180 C 385.1866028708134,183.43540669856458 526.153110047847,177.02392344497608 628,182 C 729.846889952153,186.97607655502392 792.5741626794259,203.33971291866027 882,179 C 971.4258373205741,154.66028708133973 1087.5502392344497,89.61722488038278 1185,78 C 1282.4497607655503,66.38277511961722 1361.2248803827752,108.19138755980862 1440,150 L 1440,400 L 0,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ffffff"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+            transform="rotate(-180 720 200)"
+          ></path>
+        </svg>
       </div>
     </div>
-        
+
     <div id="management-section" class="section">
       <div id="management" class="section-content">
         <h3 id="management-title">Management</h3>
         <div class="people">
           <div class="person">
-            <img src="./assets/people/sajan_jacob.png" alt="Sajan Jacob">
+            <img src="./assets/people/sajan_jacob.png" alt="Sajan Jacob" />
             <h4>Sajan Jacob</h4>
             <p class="designation">CMD</p>
-            <h5>Founder of SteveMobile Technologies Pvt Ltd, responsible for overall leadership and direction for all aspects of company’s business including strategy, software development and global delivery models. As a thorough Financial Professional and Java Programmer having deep industry knowledge with unmatched and benchmark</h5>
+            <h5>
+              Founder of SteveMobile Technologies Pvt Ltd, responsible for
+              overall leadership and direction for all aspects of company’s
+              business including strategy, software development and global
+              delivery models. As a thorough Financial Professional and Java
+              Programmer having deep industry knowledge with unmatched and
+              benchmark
+            </h5>
             <button>Read More</button>
           </div>
           <div class="person">
-            <img src="./assets/people/steve_sajan_jacob.png" alt="Steve Sajan Jacob">
+            <img
+              src="./assets/people/steve_sajan_jacob.png"
+              alt="Steve Sajan Jacob"
+            />
             <h4>Steve Sajan Jacob</h4>
             <p class="designation">CTO</p>
-            <h5>As the Cheif Technical Officer he has been instrumental inhighlighting key initiatives in the initial developmental stages of the company. He is a brilliant and bright student in his academics and is a keen observer in the field of science and technology. He has an instinctive interest in Mobile App development</h5>
+            <h5>
+              As the Cheif Technical Officer he has been instrumental
+              inhighlighting key initiatives in the initial developmental stages
+              of the company. He is a brilliant and bright student in his
+              academics and is a keen observer in the field of science and
+              technology. He has an instinctive interest in Mobile App
+              development
+            </h5>
             <button id="read_steve">Read More</button>
             <dialog id="more_steve" class="popups">
               <div class="popup-container">
-              <div class="popup-header">
+                <div class="popup-header">
                   <h2>Steve Sajan Jacob</h2>
-                <button class="primary-btn" onclick="close_popup(this)">
-                    <div class="close"><span class="material-symbols-rounded">
-                            close
-                        </span>
+                  <button class="primary-btn" onclick="close_popup(this)">
+                    <div class="close">
+                      <span class="material-symbols-rounded"> close </span>
                     </div>
-                </button>
-            </div>
-            <p class="postion">Cheif Technical Officer </p>
-            <div class="popup-content">
-              <div class="left">
-                <img src="./assets/people/steve_sajan_jacob_full.png" alt="Steve Sajan Jacob">
+                  </button>
+                </div>
+                <p class="postion">Cheif Technical Officer</p>
+                <div class="popup-content">
+                  <div class="left">
+                    <img
+                      src="./assets/people/steve_sajan_jacob_full.png"
+                      alt="Steve Sajan Jacob"
+                    />
+                  </div>
+                  <div class="right">
+                    <h5>
+                      As the Co-Founder he has been instrumental in highlighting
+                      key initiatives in the initial developmental stages of the
+                      company. He is a brilliant and bright student in his
+                      academics and is a keen observer in the field of science
+                      and technology. He has an instinctive interest in Mobile
+                      App development. Steve, youngest of the team by age , but
+                      greatest with his ideas contributing to inception of the
+                      idea with continuously testing the limit of human mind
+                      thinking . He is passionate about astrophysics and his
+                      role model is Tim Peak astronaut who is now living in the
+                      galaxy making it easy for us to reach Mars one day .
+                      Forward thinking of Steve beyond his age made this dream
+                      project a reality and continue to inspire every one to
+                      think outside the box
+                    </h5>
+                  </div>
+                </div>
               </div>
-              <div class="right">
-                <h5>As the Co-Founder he has been instrumental in highlighting key initiatives in the initial developmental stages of the company. He is a brilliant and bright student in his academics and is a keen observer in the field of science and technology. He has an instinctive interest in Mobile App development.
-
-                  Steve, youngest of the team by age , but greatest with his ideas contributing to inception of the idea with continuously testing the limit of human mind thinking . He is passionate about astrophysics and his role model is Tim Peak astronaut who is now living in the galaxy making it easy for us to reach Mars one day . Forward thinking of Steve beyond his age made this dream project a reality and continue to inspire every one to think outside the box</h5>
-              </div>
-            </div>
-          </div>
-          </dialog>
+            </dialog>
           </div>
           <div class="person">
-            <img src="./assets/people/joyce_cherian.png" alt="Joyce Cheriam">
+            <img src="./assets/people/joyce_cherian.png" alt="Joyce Cheriam" />
             <h4>Joyce Cherian</h4>
             <p class="designation">Executive Director</p>
-            <h5>Joyce strength lies in creating high performance teams and nurturing client relationships. She holds a Degree in Computer Application . She is playing pivotal role in taking SteveMobile Technologies Pvt Ltd to new heights since inception. Joyce spearhead stakeholder partnership through customer relationship at all level of business</h5>
+            <h5>
+              Joyce strength lies in creating high performance teams and
+              nurturing client relationships. She holds a Degree in Computer
+              Application . She is playing pivotal role in taking SteveMobile
+              Technologies Pvt Ltd to new heights since inception. Joyce
+              spearhead stakeholder partnership through customer relationship at
+              all level of business
+            </h5>
             <button id="read_joyce">Read More</button>
             <dialog id="more_joyce" class="popups">
               <div class="popup-container">
-              <div class="popup-header">
+                <div class="popup-header">
                   <h2>Joyce Cherian</h2>
-                <button class="primary-btn" onclick="close_popup(this)">
-                    <div class="close"><span class="material-symbols-rounded">
-                            close
-                        </span>
+                  <button class="primary-btn" onclick="close_popup(this)">
+                    <div class="close">
+                      <span class="material-symbols-rounded"> close </span>
                     </div>
-                </button>
-            </div>
-            <p class="postion">Executive Director </p>
-            <div class="popup-content">
-              <div class="left">
-                <img src="./assets/people/joyce_cherian_full.png" alt="Steve Sajan Jacob">
+                  </button>
+                </div>
+                <p class="postion">Executive Director</p>
+                <div class="popup-content">
+                  <div class="left">
+                    <img
+                      src="./assets/people/joyce_cherian_full.png"
+                      alt="Steve Sajan Jacob"
+                    />
+                  </div>
+                  <div class="right">
+                    <h5>
+                      Joyce strength lies in creating high performance teams and
+                      nurturing client relationships. She holds a Degree in
+                      Computer Application . She is playing pivotal role in
+                      taking SteveMobile Technologies Pvt Ltd to new heights
+                      since inception. Joyce spearhead stakeholder partnership
+                      through customer relationship at all level of the company
+                      and is the prime point charge of employee empowerment ,
+                      heads all business operations in an executive role .Joyce
+                      believes that nothing is impossible and the best is yet to
+                      come on a day to day basis delivering results exceeding
+                      stakeholder expectations.
+                    </h5>
+                  </div>
+                </div>
               </div>
-              <div class="right">
-                <h5>Joyce strength lies in creating high performance teams and nurturing client relationships. She holds a Degree in Computer Application . She is playing pivotal role in taking SteveMobile Technologies Pvt Ltd to new heights since inception.
-
-                  Joyce spearhead stakeholder partnership through customer relationship at all level of the company and is the prime point charge of employee empowerment , heads all business operations in an executive role .Joyce believes that nothing is impossible and the best is yet to come on a day to day basis delivering results exceeding stakeholder expectations.</h5>
-              </div>
-            </div>
-          </div>
-          </dialog>
+            </dialog>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./assets/scripts/tsparticles.all.bundle.min.js"></script>
+
   <script src="floating-icons.js"></script>
   <script src="scripts.js"></script>
 </html>
